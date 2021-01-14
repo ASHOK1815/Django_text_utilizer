@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<h1>Welcome to the text analyser .Enter the text below</h1>
+       <form action="/analyze" method="get">
+        <textarea name='text' style="width: 1516px; height: 118px;"></textarea>
+        <input type="checkbox" name="removepunc">Remove Puncuations 
+        <input type="checkbox" name="capitalize">Capitalize
+        <input type="checkbox" name="spaceremover">SpaceRemover
+        <input type="checkbox" name="charactercount">CharacterCount<br>
+        <button type="submit">Analyse Text</button>
+       </form>
+
+
+{% endblock body %}
